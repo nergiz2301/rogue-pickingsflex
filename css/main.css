@@ -1,3 +1,14 @@
+@media screen and (max-width:767px){
+	header h1{
+		padding-bottom:5px;
+
+	}
+	header nav ul li{
+		padding-bottom: 20px;
+	}
+	
+}
+
 html{
 	font-size:16px;
 }
@@ -46,11 +57,11 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	text-align:center;
 	flex-flow:row wrap;
 
 }
@@ -58,13 +69,15 @@ header {
 header h1 {
 	margin: 0;
 	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 25px 0;
+	
 }
 header nav ul {
 	margin: 0;
@@ -75,7 +88,8 @@ header nav ul li {
 	font-weight: 700;
 	font-size: 14px;
 	padding: 0 10px;
-	display: inline;
+    list-style-type: none;
+
 }
 header nav ul li a{
 	text-decoration: none;
@@ -120,7 +134,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
@@ -175,4 +189,73 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+/*********************tablet*****************/
+@media screen and (min-width:768px){
+	header {
+		margin: 0 auto;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		flex-flow:row wrap;
+	}
+	header h1{
+		width:100%;
+		padding-top:38px;
+		padding-bottom:5px;
+		border-bottom: 3px solid #77a466;
+	}
+	header nav ul li{
+		width:100%;
+		padding-bottom:20px;
+	}
+	
+    .section-one,
+    .section-two,
+    .section-three {
+	   width: 32%;
+	   height: 350px;
+
+
+}
+
+}
+/*****************desktop******************/
+@media screen and (min-width:1200px){
+	header {
+		border-bottom: 3px solid #77a466;
+		margin: 0 auto;
+		display:flex;
+		width:100%;
+		justify-content:space-between;
+		align-items: center;
+		flex-flow: row wrap;	
+	
+	}
+	header h1{
+		width:30%;
+		padding-bottom: 20px;
+	}
+	header nav{
+		width:70%;
+		padding-top:30px;
+	}
+	
+	header nav ul li{
+		display:inline;
+	}
+    .bottom-section{
+		width:98%;
+
+	}
+	
+   .section-one,
+   .section-two,
+   .section-three {
+	width: 32%;
+	height:200px;
+ 
+
+    }
 }
